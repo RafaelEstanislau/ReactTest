@@ -18,8 +18,8 @@ body {
 }
 
 .container .cardUser img {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   margin-bottom: 10px;
   border-radius: 15%;
   align-items: center;
@@ -77,4 +77,29 @@ body {
 }
 .table .tableSpace {
   padding: 1em;
+}
+@media screen and (max-width: 1024px) {
+  .container .cardUser {
+    width: 33%;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container .cardUser {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .container .cardUser {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container .cardUser {
+    width: 100%;
+  }
 }
