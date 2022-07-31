@@ -1,9 +1,9 @@
 body {
-  background-color: #fed8b1;
+  background-color: #a4dfdf;
 }
 .container {
   padding: 40px 0px 20px 0px;
-  width: 100%;
+  width: 99%;
   margin: auto;
   flex-wrap: wrap;
   display: flex;
@@ -23,23 +23,58 @@ body {
   margin-bottom: 10px;
   border-radius: 15%;
   align-items: center;
+  transition: 0.5s ease all;
+}
+.container .cardUser img:hover {
+  transform: scale(1.2);
 }
 
 .container .cardUser .text {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  color: #3b3a30;
+  font-size: 28px;
   font-weight: 500;
   line-height: 32px;
   margin: 0 0 24px;
   word-wrap: break-word;
   margin-top: 10px;
 }
+.container .cardUser .buttonText {
+  background-color: #3acacc; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 16px;
+}
+.container .cardUser .buttonText:hover {
+  cursor: pointer;
+  color: #00ced1;
+  background-color: white;
+}
 .container .cardBox {
-  background: rgba(253, 253, 253, 0.808);
+  background: #fff;
   border-radius: 15%;
   padding: 35px 5px;
-  min-width: 200px;
-  min-height: 300px;
+  min-width: 100px;
+  min-height: 200px;
   max-height: 350px;
   width: 100%;
+}
+.table {
+  margin: auto;
+}
+.tableText {
+  font-family: "Raleway", sans-serif;
+  color: #3b3a30;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+  word-wrap: break-word;
+  text-align: center;
+}
+.table .tableSpace {
+  padding: 1em;
 }

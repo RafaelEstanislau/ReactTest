@@ -6,7 +6,7 @@ export const useUsers = () => useContext(UsersContext);
 
 const UsersProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
-  const [currentUser, setCurrentUser] = useState();
+  const [currentUser, setCurrentUser] = useState({});
 
   const value = useMemo(() => {
     return {
